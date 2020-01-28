@@ -28,3 +28,5 @@ ES2015에서 generator라는 개념을 도입했다. iterable/iterator 방식을
 * 더 이상 yield 구문이 없다면 반복을 완료한다.
 
 앞의 예제에서 실행한 것과 동일한 작업을 generator를 통해 처리한 내용을 generator.js에서 정리한다.
+
+주의할 점이 있다면, generator를 선언할 때 function 이름 앞에 "*" 을 붙여줘야 한다.
