@@ -14,7 +14,17 @@ done은 원소가 끝에 도달했는지의 여부를 알려주는 값이고, va
 
 iterator.js 에서 관련 예제를 정리한다.
 
-## iterable
+## Iterable
 iterator 프로토콜을 구현한다고 해도 for-of 구문에서 사용할 수 없다. iterable 프로토콜을 구현해줘야 한다. iterable 프로토콜은 Symbol.iterator를 키에 대해 반복자를 반환하는 함수를 값으로 넘겨주도록 구현해주면 된다.
 
 iterable.js 에서 관련 예제를 정리한다.
+
+## Generator
+ES2015에서 generator라는 개념을 도입했다. iterable/iterator 방식을 좀 더 직관적으로 구현할 수 있는 방법이다.
+
+주요 특징을 정리하면,
+* generator는 iterable과 iterator 둘 다 가진다.
+* next()를 호출하면, yield가 있는 위치까지 실행을 진행한다.
+* 더 이상 yield 구문이 없다면 반복을 완료한다.
+
+앞의 예제에서 실행한 것과 동일한 작업을 generator를 통해 처리한 내용을 generator.js에서 정리한다.
