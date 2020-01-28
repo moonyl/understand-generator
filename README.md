@@ -1,4 +1,4 @@
-# understand-generator
+# generator 사용하기
 javascript의 generator를 이해하기 위해 예제를 연습한다.
 
 [Understanding Generators](https://medium.com/javascript-in-plain-english/javascript-understanding-generators-d7488fbf2c9a) 에 내용에 기반한다.
